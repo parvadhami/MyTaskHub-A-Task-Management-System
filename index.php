@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
-<body>
+<body background="bg_1.png">   
     <div class="row">
         <div class="col-md-4 m-auto" id="home_page">
             <center><h3> Choose Login</h3></center><br>
