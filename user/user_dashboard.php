@@ -96,7 +96,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center">
-                        <a type="button" class="update" id="task">Update Task</a>
+                        <a type="button" class="update" id="task">Update Status</a>
                     </td>
                 </tr>
                 <tr>
@@ -109,8 +109,12 @@
         <div class="col-md-10" id="right_sidebar">
             <h4>Instruction for the users</h4>
             <ul style="Line-height: 3em; font-size: 1.2em; List-style-type:none">
-                <li>1. All Tasks given as below:</li>
-                <li>2. All Tasks given as below:</li>
+                <li>1. Welcome! You can create tasks by clicking on "Create Task" as provided.</li>
+                <li>2. You will be providing the name of the person to whom you are assigning the task, the description of that task, the start and the end</li>
+                <li>3. Click 'Submit' for designating the task.</li>
+                <li>4. For editing or deleting the task, click on 'Manage Task' button.</li>
+                <li>5. To change the status of the given task, click on 'Update Task'.</li>
+                <li>6. The 'Logout' button will redirect you to the Login page. </li>
 
             </ul>
         </div>
