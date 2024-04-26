@@ -1,7 +1,7 @@
 <?php
     include('includes/connection.php');
     if(isset($_POST['userRegistration'])){
-        $query = "insert into users values(null,'$_POST[name]','$_POST[email]','$_POST[password]',$_POST[mobile])";
+        $query = "insert into users values(null,'$_POST[name]','$_POST[email]','$_POST[password]',$_POST[mobile], null)";
         $query_run = mysqli_query($connection, $query);
         if($query_run){
             echo "<script type='text/javascript'>
@@ -32,32 +32,27 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- External CSS file -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
 </head>
 
-<body>
-    <div class="row">
-        <div class="col-md-3 m-auto" id="register_home_page">
-            <center><h3 style="background-color: #5a8f7b">User Registration</h3></center>
-            <form action="" method="post">
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Enter your Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" class="form-control" placeholder="Enter password" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="mobile" class="form-control" placeholder="Enter your Mobile no." required>
-                </div>
-                <div class="form-group">
-                    <center><input type="submit" name="userRegistration" value="Register" class="btn- btn-warning"></center>
-                </div>
-            </form>
-            <center><a href="index.php" class="btn btn-danger">Go To home</a></center>
-        </div>
+<body id="bg">
+<div class="loginbox">
+    <img src="user/avatar.jpg" class="avatar">
+    <h1>Registration</h1>
+    <form action="" method="post">
+        <p>Name</p>
+        <input type="text" name="name" placeholder="Name" required>
+        <p>Email</p>
+        <input type="email" name="email" placeholder="Email" required>
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Password" required>
+        <p>Mobile Number</p>
+        <input type="tel" name="mobile" placeholder="Mobile Number" required>
+        <input type="submit" name="userRegistration" value="Register">
+        <a href="index.php">Go to Home</a><br>
+        <a href="user/user_login.php">Go to Login</a>
+    </form>
+</div>
 </div>
 </body>
 </html>
