@@ -1,0 +1,244 @@
+body{
+    background-color: #355764;
+    padding: 0px;
+    margin: 0px
+
+}
+
+#home_page{
+    background-color: #3291df;
+    top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    height: 30vh;
+    width: 25vw;
+}
+
+
+#login_home_page{
+    background-color: #81cacf;
+    top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 25vh;
+    width: 25vw;
+}
+
+#register_home_page{
+    background-color: #81cacf;
+    top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 25vh;
+    width: 25vw;
+}
+
+#header{
+    background-color: #04f6cc;
+    top: 25vh;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    height: 25vh;
+    width: 25vw;
+}
+
+.container{
+    width: 80%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../bg_1.png");
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height:12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover{
+    color: rgb(52, 139, 156)
+
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+    
+}
+
+h1{
+    color: #fff;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    color:#fff;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 15px;
+}
+
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline:none;
+    margin-top: 30px;
+}
+
+.card{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url("../one.jpg");
+
+}
+
+.card2{
+    background-image: url("../two.jpg");
+
+}
+
+.card3{
+    background-image: url("../three.jpg");
+
+}
+
+.card4{
+    background-image: url("../four.png");
+
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+#a{
+    color: black;
+
+}
+#b{
+    color: black;
+
+}
+
+#c{
+    color: black;
+
+}
+
+#d{
+    color: black;
+
+}
+
+#same{
+    text-decoration: none;
+    color:white;
+
+}
+
+#left_sidebar{
+    margin-top: 50px;
+    width: 13vh;
+    height: 30vh;
+    display:inline-block;
+}
+
+#left_sidebar table tr{
+    background-color: #0096ff;
+    color: white;
+    font-size: 18px;
+}
+#left_sidebar table tr:hover{
+    background-color: #04f6cc;
+    color: black;
+}
+
+#same{
+    text-decoration: none;
+    color:white;
+}
+
+#same:hover{
+    background-color: #04f6cc;
+    color: black
+}
+
+.update{
+    text-decoration: none;
+    color:white;
+
+}
+
+.update:hover{
+    color: black;
+}
+
+#right_sidebar{
+    padding: 35px;
+    height: 75vh;
+    width:75vw;
+    display: inline-block;
+    color: white;
+}

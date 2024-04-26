@@ -1,0 +1,19 @@
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    color:  #254cc1;
+}
+
+.form-control{
+    width: 400px;
+}
+
+#num_subtasks{
+    width: 300px;
+    border-radius: 5px;
+}
+
+h3{
+    color: black;
+}

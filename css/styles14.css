@@ -1,0 +1,23 @@
+
+
+#calendar{
+
+    background-image: linear-gradient(rgba(245, 242, 242, 0.7),rgba(179, 176, 176, 0.7)),url("../bg_1.png");
+    background-position: bottom;
+    font-size: large;
+    color: #1d4ee0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+
+}
+
+.header--title{
+    font-size: larger;
+    color: #3964e7;
+}
+
+a:hover{
+    color:#1d4ee0
+}

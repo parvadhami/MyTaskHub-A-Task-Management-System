@@ -1,0 +1,15 @@
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    color:  #254cc1;
+}
+
+h3{
+    color: black;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}

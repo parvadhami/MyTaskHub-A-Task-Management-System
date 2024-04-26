@@ -1,0 +1,51 @@
+.row{
+    display: flex;
+    height: 76%;
+    align-items: center;
+    color:  white;
+}
+
+span{
+    color: white;
+}
+
+a{
+    color:white;
+}
+
+span:hover{
+    color: white
+}
+
+i{
+    color: white;
+}
+
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #6b89e3;
+    border-radius: none;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--title{
+    color: white;
+}
+
+label{
+    color:white;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url("../bg_1.png");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
