@@ -9,17 +9,17 @@
     <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- External CSS file -->
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles5.css">
 </head>
 <body>
     <h3>Create Tasks here</h3>
     <div class="row">
         <div class="col-md-6">
+            
             <form action="" method="post">
                 <div class="form-group">
                     <label>Select User</label>
                         <select class="form-control" name="id">
-                            <option>-Select-</option>
                             <?php
                                 include("../includes/connection.php");
                                 $query = "select uid,name from users";
@@ -36,18 +36,42 @@
                     
                 </div>
                 <div class="form-group">
+                    <label>Title:</label>
+                    <textarea class="form-control" rows="1" cols="50" name="title" placeholder="Mention the Title" required></textarea>
+
+                </div>
+                <div class="form-group">
                     <label>Description:</label>
                     <textarea class="form-control" rows="3" cols="50" name="description" placeholder="Mention the Task"></textarea>
 
                 </div>
+              
+                <div class="form-group">
+                    <label>Priority</label>
+                    <select class="form-control" name="priority" value="<?php echo $row['priority']; ?>" required>
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                </div>
                 <div class="form-group">
                     <label> Start date:</label>
-                    <input type="date" class="form-control" name="start_date">
+                    <input type="datetime-local" class="form-control" name="start_date" min="<?php echo date('Y-m-d\TH:i'); ?>" required>
                 </div>
                 <div class="form-group">
-                    <label> End date:</label>
-                    <input type="date" class="form-control" name="end_date">
+                    <label> Deadline:</label>
+                    <input type="datetime-local" class="form-control" name="end_date" min="<?php echo date('Y-m-d\TH:i', strtotime('+1 minute')); ?>" required>
                 </div>
+                <div class="form-group">
+                    <label>Status</label>
+                    <select class="form-control" name="status" value="<?php echo $row['status']; ?>" required>
+                        <option>Not Started</option>
+                        <option>In-Progress</option>
+                        <option>Completed</option>
+                        <option>Incomplete</option>
+                    </select>
+                </div>
+                
                 <input type="submit" class="btn btn-warning" name="create_task" value="Create">
             </form>
     </div>
