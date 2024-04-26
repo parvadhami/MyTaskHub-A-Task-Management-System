@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>MyTaskHub: Manage Tasks</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- jQuery file -->
@@ -131,7 +132,7 @@
                         ?>
                 <tr>
                     <td><?php echo chr($i); ?></td>
-                    <td><?php echo $row2['sid']; ?></td>
+                    <td><?php echo " "; ?></td>
                     <td><?php echo $row2['title']; ?></td>
                     <td><?php echo $row2['description']; ?></td>
                     <td><?php echo $row2['priority']; ?></td>
@@ -156,7 +157,7 @@
             </div></center>
     <center><div class="card-container">
     <h3 class="main--title"></h3>
-    <div class="col-md-2" id="right_sidebar">
+    <div class="col-md-3" id="right_sidebar">
             <?php
     include('../includes/connection.php');
     if ($connection === false) {
