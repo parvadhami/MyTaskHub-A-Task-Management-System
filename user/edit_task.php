@@ -45,7 +45,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edit Task</title>
+    <title>MyTaskHub: Edit Task</title>
     <!-- jQuery file -->
     <script src="../includes/jquery_latest.js"></script>
     <!--Bootstrap-->
@@ -85,6 +85,7 @@
                     <label>Select user</label>
 
                         <select class="form-control" name="id" required>
+                            <option>-Select-</option>
                             <?php
                                 $query1 = "select uid,name from users";
                                 $query_run1 = mysqli_query($connection,$query1);
