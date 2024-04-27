@@ -1,10 +1,10 @@
-# Task-Management-System
-Task Management System for Personal usages
-The purpose of a Task Management app is to help individuals in organizing, prioritizing, tracking, and completing tasks efficiently. While making the application the following aspects have been included:
+# My Task Hub: A Task-Management-System
+Task Management System for Personal Use
+This Task Management app aims to help individuals organise, prioritise, track, and complete tasks efficiently. While making the application the following aspects have been included:
 
 1. Organization: A Task Management app allows users to organize their tasks in a structured manner, such as by project, category, priority, due date, or any custom criteria relevant to their workflow.
    
-2. Prioritization: Users can prioritize tasks based on urgency, importance, or other criteria to focus on what needs to be done first.
+2. Prioritization: Users can prioritize tasks based on urgency, importance, or other criteria to focus on what must be done first.
    
 3. Efficiency: By centralizing tasks in one place and providing tools for managing them, Task Management apps help users save time and effort in keeping track of their responsibilities.
    
