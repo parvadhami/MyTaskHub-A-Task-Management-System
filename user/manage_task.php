@@ -91,19 +91,22 @@
             </div>-->
             
 </div>
-<center><table class="table" id=dataTable style="width:85vw">
+<center><table class="table" id="dataTable" style="width:85vw">
+
+  <tbody>
         <tr>
             <th>Sr. No.</th>
             <th>Task ID</th>
             <th>Title</th>
             <th>Description</th>
-            <th>Priority</th>
+            <th onclick="sortTable(4)">Priority</th>
             <th>Start Date</th>
             <th>Deadline</th>
             <th>Status</th>
             <th>Action</th>
 
         </tr>
+    </tbody>
         <?php
             $sno = 1;
             $query = "select * from tasks WHERE uid = $user_id";
@@ -135,7 +138,7 @@
                     <td><?php echo " "; ?></td>
                     <td><?php echo $row2['title']; ?></td>
                     <td><?php echo $row2['description']; ?></td>
-                    <td><?php echo $row2['priority']; ?></td>
+                    <td><?php echo " " ?></td>
                     <td><?php echo $row2['start_date']; ?></td>
                     <td><?php echo $row2['end_date']; ?></td>
                     <td><?php echo $row2['status']; ?></td>
@@ -249,6 +252,43 @@
                 }
             }
         });
+</script>
+<script>
+function sortTable(colIndex) {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("dataTable");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[colIndex];
+      y = rows[i + 1].getElementsByTagName("TD")[colIndex];
+      if (priorityValue(x.innerHTML) > priorityValue(y.innerHTML)) {
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+
+function priorityValue(priority) {
+  switch (priority) {
+    case "Low":
+      return 3;
+    case "Medium":
+      return 2;
+    case "High":
+      return 1;
+    default:
+      return 4;
+  }
+}
     </script>
             
         </div>
