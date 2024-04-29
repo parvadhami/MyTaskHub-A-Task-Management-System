@@ -272,6 +272,8 @@ if ($result && mysqli_num_rows($result) > 0) {
         <div class="section">
             <h3>Manage Tasks</h3>
             <p>To update or delete a task, navigate to the "Manage Task" section and click on the task you wish to modify. You will then see options to edit or delete the task.</p>
+            <p>To sort tasks based on priority or dates click on the respective column-head.</p>
+
         </div>
 
         <div class="section">
