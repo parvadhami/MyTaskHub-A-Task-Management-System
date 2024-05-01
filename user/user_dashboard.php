@@ -262,8 +262,8 @@ if ($result && mysqli_num_rows($result) > 0) {
         </div>
 
         <div class="section">
-            <h3>Create Tasks</h3>
-            <p>To create a new task, simply click on the "Create Task" button located in the navigation menu. You can then enter the details of the task such as title, description, due date, etc.</p>
+            <h3>Create Tasks and Sub-tasks</h3>
+            <p>To create a new task or a sub-task, simply click on the "Create Task" or the "Create Sub-Task" button located in the navigation menu. You can then enter the details of the task such as title, description, due date, etc.</p>
             <div class="note">
                 <p>Note: Fields marked with an asterisk (*) are mandatory.</p>
             </div>
