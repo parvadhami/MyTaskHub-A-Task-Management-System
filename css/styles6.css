@@ -142,4 +142,10 @@ table tbody tr:nth-of-type(even){
     margin-top: 20px;
   }
   
+th {
+    cursor: pointer;
+}
+th:hover {
+    background-color: #3286e0;
+}
 
