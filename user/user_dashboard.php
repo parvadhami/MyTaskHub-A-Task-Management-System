@@ -120,13 +120,13 @@
             <li class="active">
                 <a href = "user_dashboard.php">
                     <i class="fas fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
+                    <span>Get Started!</span>
                 </a>
             </li>
             <li>
-                <a href = "profile.php">
-                    <i class="fas fa-user"></i>
-                    <span>Profile</span>
+                <a type="button" class="update" id="view_task">
+                    <i class="fa-regular fa-note-sticky"></i>
+                    <span>View Tasks</span>
                 </a>
             </li>
             <li>
@@ -155,15 +155,15 @@
                 </a>
             </li>
             <li>
-                <a type="button" class="update" id="view_task">
-                    <i class="fa-regular fa-note-sticky"></i>
-                    <span>View Tasks</span>
-                </a>
-            </li>
-            <li>
                 <a type="button" class="update" id="notes">
                     <i class="fa-solid fa-pen"></i>
                     <span>Notes to Self</span>
+                </a>
+            </li>
+            <li>
+                <a href = "profile.php">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
                 </a>
             </li>
             <li>
