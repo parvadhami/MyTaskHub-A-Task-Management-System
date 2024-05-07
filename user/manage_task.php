@@ -33,7 +33,7 @@
             <a href="manage_task.php"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <input type="text" id="searchInput" placeholder="Search...">    
                 <ul id="searchResults"></ul>
-
+    <!-- 2-D Linear search-->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var searchInput = document.getElementById('searchInput');
@@ -91,7 +91,7 @@
             </div>-->
             
 </div>
-<center><table class="table" id="dataTable" style="width:85vw">
+<center><table class="table" id="dataTable" style="width:90vw">
 
   <tbody>
         <tr>
@@ -100,11 +100,10 @@
             <th>Title</th>
             <th>Description</th>
             <th onclick="sortTable(4)">Priority</th>
-            <th>Start Date</th>
+            <th onclick="sortTable(5)">Start Date</th>
             <th>Deadline</th>
             <th>Status</th>
             <th>Action</th>
-
         </tr>
     </tbody>
         <?php
@@ -155,6 +154,7 @@
                 }
         ?>
     </table></center>
+    
     <center><div class="header--title">
                 <a href="check.php" class="btn btn-warning" name="check"><h6>Status Checks</h6></a>
             </div></center>
@@ -240,9 +240,9 @@
                     title: {
                         display: true,
                         text: 'Your Task Status',
-                        position: 'top',
+                        position: 'bottom',
                         font: {
-                        size: 18, 
+                        size: 20, 
                         weight: 'bold', 
                         family: 'Lucida Sans Unicode', 
                         //style: 'italic', 
@@ -253,6 +253,7 @@
             }
         });
 </script>
+<!--Function to sort based on priority -->
 <script>
 function sortTable(colIndex) {
   var table, rows, switching, i, x, y, shouldSwitch;
@@ -280,15 +281,48 @@ function sortTable(colIndex) {
 function priorityValue(priority) {
   switch (priority) {
     case "Low":
-      return 3;
+      return 1;
+    break;
     case "Medium":
       return 2;
+    break;
     case "High":
-      return 1;
+      return 3;
+    break;
     default:
-      return 4;
+      return 0;
+    break;
   }
 }
+    </script>
+<!-- Function to sort based on Date -->
+<script>
+        function sortTable(columnIndex) {
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("dataTable");
+            switching = true;
+            
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[columnIndex];
+                    y = rows[i + 1].getElementsByTagName("TD")[columnIndex];
+
+                    // Compare the values in the current and next row
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                }
+            }
+        }
     </script>
             
         </div>
