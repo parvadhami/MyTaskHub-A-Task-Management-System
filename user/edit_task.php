@@ -85,7 +85,6 @@
                     <label>Select user</label>
 
                         <select class="form-control" name="id" required>
-                            <option>-Select-</option>
                             <?php
                                 $query1 = "select uid,name from users";
                                 $query_run1 = mysqli_query($connection,$query1);
@@ -119,11 +118,11 @@
                 </div>
                 <div class="form-group">
                     <label> Start date:</label>
-                    <input type="datetime-local" class="form-control" name="start_date" value="<?php echo $row['start_date']; ?>" min="<?php echo date('Y-m-d\TH:i'); ?>" required>
+                    <input type="datetime-local" class="form-control" name="start_date" value="<?php echo $row['start_date']; ?>"  required>
                 </div>
                 <div class="form-group">
                     <label> End date:</label>
-                    <input type="datetime-local" class="form-control" name="end_date" value="<?php echo $row['end_date']; ?>" min="<?php echo date('Y-m-d\TH:i', strtotime('+1 minute')); ?>" required>
+                    <input type="datetime-local" class="form-control" name="end_date" value="<?php echo $row['end_date']; ?>"  required>
                 </div>
                 <div class="form-group">
                     <label>Status</label>
