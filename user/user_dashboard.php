@@ -254,7 +254,7 @@ if ($result && mysqli_num_rows($result) > 0) {
             margin: 0;
         }
     </style>
-        <h2>MyTaskHub User Manual</h2>
+        <h2>MyTaskHub</h2>
         
         <div class="section">
             <h3>Getting Started</h3>
