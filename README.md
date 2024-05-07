@@ -1,17 +1,34 @@
-# My Task Hub: A Task-Management-System
-Task Management System for Personal Use
-This Task Management app aims to help individuals organise, prioritise, track, and complete tasks efficiently. While making the application the following aspects have been included:
+# MyTaskHub: Your Personal-Task-Management Application
+MyTaskHub aims to track various events that demand personal and professional time. It will be designed to keep track of running tasks, prioritise them and track tasks in a dynamic and fast-paced environment.
 
-1. Organization: A Task Management app allows users to organize their tasks in a structured manner, such as by project, category, priority, due date, or any custom criteria relevant to their workflow.
-   
-2. Prioritization: Users can prioritize tasks based on urgency, importance, or other criteria to focus on what must be done first.
-   
-3. Efficiency: By centralizing tasks in one place and providing tools for managing them, Task Management apps help users save time and effort in keeping track of their responsibilities.
-   
-4. Deadline Management: Task Management apps often include features for setting deadlines, receiving reminders, and tracking progress towards completion, helping users stay organized and meet deadlines.
-   
-5. Progress Tracking: Users can track the progress of their tasks, monitor completion status, and identify any bottlenecks or overdue tasks that need attention.
-    
-6. Time Management: Task Management apps can assist users in managing their time more effectively by scheduling tasks, allocating time blocks, and identifying opportunities for better task distribution.
-    
-7. Performance Evaluation: Some Task Management apps provide reporting and analytics features that allow users or managers to evaluate task completion rates, identify productivity trends, and make informed decisions for improving efficiency.
+# Steps to set up the Application
+
+# 1. Step-1:
+Download XAMPP server from: https://www.apachefriends.org/download.html 
+
+# 2. Step-2:
+Open the XAMPP panel and select the "Start" button under the "Actions" column.
+![image](https://github.com/SHASH1021/Personal-Task-Management/assets/95118321/0d650fd1-1f69-45f4-95b0-dba82b3b8dc9)
+
+Click the "Admin" button under the "Actions" column for MySQL
+
+# 3. Step-3:
+Create a Database for the application. Assign the database a name (in this case: tms2_db). Create tables as below:
+# Table: 'users'
+![image](https://github.com/SHASH1021/Personal-Task-Management/assets/95118321/29ee3ad0-a1de-4863-94e3-915365023e9b)
+
+# Table: 'tasks':
+![image](https://github.com/SHASH1021/Personal-Task-Management/assets/95118321/dcbff327-53e9-46f1-8456-d3821e9cfb2a)
+
+# Table: 'subtasks':
+![image](https://github.com/SHASH1021/Personal-Task-Management/assets/95118321/09a22d6d-605e-4329-8851-0df2e2d16c20)
+
+# 4. Step-4:
+Download this GitHub zip folder and copy it into the 'ht_docs' folder of your XAMPP file.
+
+# 5. Step-5:
+Enter the given link into the search bar of your browser while your XAMPP server is active: http://localhost/TMS_3/index.php
+
+![image](https://github.com/SHASH1021/Personal-Task-Management/assets/95118321/7ac5dc21-f6b7-40ef-845e-5b1cb629a0cf)
+
+You can now use the application!
